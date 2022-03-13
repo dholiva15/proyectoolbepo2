@@ -2,6 +2,13 @@
 
 @import './variables.scss';
 @import './header.scss';
+@import './boton_whatsapp.scss';
+@import './iconos.scss';
+@import './index.scss';
+@import './asesoramiento.scss';
+@import './ofertas.scss';
+@import './quienessomos.scss';
+
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
@@ -31,9 +38,9 @@ h2{
     font-size: 45px;
     color: rgba(255, 166, 0, 0.911);
     text-align: center;
-    
 
 }
+
 h1{
 font-size: 75px;
 color: $mainColor;
@@ -42,20 +49,8 @@ font-weight: bolder;
 
 }
  
-nav{   
-    background-color: $mainColor;
-    text-align: center;
-    
-    
 
-}
-.colortexto{
-    color: white;
-    
-}
-.colortexto:hover{
-    color: red
-}
+
 
 p{
     font-size: 20px;
@@ -69,122 +64,6 @@ h3{
     font-size: 25px;
     color: rgb(250, 174, 9);
 }
-/* Iconos de la WEB*/
-    .iconos{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    
-    .bi-facebook{
-        font-size: 60px;
-        color: blue;
-    }
-    .bi-whatsapp{
-        font-size: 60px;
-        color: green;
-    }
-    .bi-twitter{
-        font-size: 60px;
-        color: lightblue;
-    }
-    .bi-youtube{
-        font-size: 60px;
-        color: red;
-    }
-    .bi-whatsapp:hover{
-        color: greenyellow;
-    }
-    .bi-twitter:hover{
-        color: hotpink;
-    }
-    .bi-facebook:hover{
-        color: lavender;
-    }
-    .bi-youtube:hover{
-        color: grey;
-    }
-    .bi-house{
-        font-size: 60px;
-        color:grey;
-        margin-right: 1px;
-    }
-    .bi-house:hover{
-        color: $mainColor;
-    }
-    
-
-
-
-/* container carroousel*/
-
-.container2{
-
-    height: 500px;
-    margin-top: 10%;
-
-    
-
-}
-
-.imgnormalizada img{
-
-  width: auto;
-  height: 400px;
-  max-height: 400px;
-  margin-left: 30%;
-}
-
-.fotoscarrousel{
-    background-image: linear-gradient(to right, $mainColor,yellow);
-}
-
-
-/* 4 imagenes del body*/
-
-.container3{
-    height: 2000px;
-    margin-top: 50px;
-}
-.row1{
-
-    height: 800px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-
-}
-
-
-
-.row2{
-    height: 800px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-.imagen_body a img{
-
-    width: 90%;
-    height: 75%;
-    
-    margin-left: 5%;
-    margin-right: 5%;
-
-}
-
-.imagen_body h3{
-    text-align: center;
-    text-overflow: clip;
-    
-}
-
-
-
-
-.col-sm-12{
-    margin-top: 7%;
-}
 
 
 /* foooter*/
@@ -194,152 +73,11 @@ h3{
     margin-top: 50%;
 }
 
-.container4{
-    
-   
-}
-
-/* Boton de Whatsapp*/  
-
-
-.botonWhatsapp{
-    position: fixed;
-    left: 1350px;
-    top: 450px;
-    
-    height: 150px;
-    width: 150px;
-    
-}
-.botonWhatsapp a{
-    
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-
-
-}
-.botonWhatsapp a h4{
-    margin-top: 65px;
-    margin-left: 45px;
-}
-
-
-
-
-
 footer{
     
    color: $mainColor;
     
  
-}
-
-/* Asesoramiento*/
-
-.container_asesoramiento{
-
-    height: 1900px;
-}
-.titulo_asesoramiento{
-
-    height: 300px;
-    margin-top: 20px;
-    
-
-
-
-}
-.titulo_asesoramiento h2{
-    color: rgba(255, 208, 0, 0.274);
-    text-align: center;
-    
-}
-.titulo_asesoramiento p{
-    text-align: center;
-    color: rgba(255, 208, 0, 0.842);
-}
-.proyectos{
-    height: 400px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/*Ofertas*/
-
-.container_ofertas{
-    height: 1900px;
-}
-.ofertas{
-
-    height: 500px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    
-
-}
-.ofertas img{
-    height: 70%;
-    width: 70%;
-}
-.titulo_ofertas{
-    height: 400px;
-    margin-top: 30px;
-
-}
-.titulo_ofertas h3{
-    text-align: center;
-    color:$mainColor;
-    margin-top: 5%;
-    }
-
-.titulo_ofertas p{
-    text-align: center;
-    color: green
-}
-
-/*Quienes Somos*/
-
-.container_somos{
-    
-}
-
-.titulo_somos{
-
-    text-align: center;
-    color:$mainColor;
-    margin-top: 5%;
- 
-    
-
-}
-
-.titulo_somos h2{
-    font-size: 60px;
-
-}
-.cuerpo_somos{
-
-    height: 1000px;
-
-    margin-top: 50px;
-}
-
-.imagen_somos1{
-    margin-top: 30px;
-
-   
-    justify-content: center;
-    align-items: center;
-}
-
-.imagen_somos{
-
-    width: 80%;
-    height: 80%;
 }
 
 /*Formulario de para login*/

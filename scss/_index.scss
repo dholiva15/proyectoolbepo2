@@ -1,0 +1,69 @@
+/* container carroousel*/
+
+.container2{
+
+    height: 500px;
+    margin-top: 10%;
+
+    
+
+}
+
+.imgnormalizada img{
+
+  width: auto;
+  height: 400px;
+  max-height: 400px;
+  margin-left: 30%;
+}
+
+.fotoscarrousel{
+    background-image: linear-gradient(to right, $mainColor,yellow);
+}
+
+
+/* 4 imagenes del body*/
+
+.container3{
+    height: 2000px;
+    margin-top: 50px;
+}
+.row1{
+
+    height: 800px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+
+
+.row2{
+    height: 800px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.imagen_body a img{
+
+    width: 90%;
+    height: 75%;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.imagen_body h3{
+    text-align: center;
+    text-overflow: clip;
+    
+}
+
+
+
+
+.col-sm-12{
+    margin-top: 7%;
+}
+

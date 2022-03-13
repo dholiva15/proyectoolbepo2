@@ -1,0 +1,44 @@
+/* Iconos de la WEB*/
+.iconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bi-facebook{
+    font-size: 60px;
+    color: blue;
+}
+.bi-whatsapp{
+    font-size: 60px;
+    color: green;
+}
+.bi-twitter{
+    font-size: 60px;
+    color: lightblue;
+}
+.bi-youtube{
+    font-size: 60px;
+    color: red;
+}
+.bi-whatsapp:hover{
+    color: greenyellow;
+}
+.bi-twitter:hover{
+    color: hotpink;
+}
+.bi-facebook:hover{
+    color: lavender;
+}
+.bi-youtube:hover{
+    color: grey;
+}
+.bi-house{
+    font-size: 60px;
+    color:grey;
+    margin-right: 1px;
+}
+.bi-house:hover{
+    color: $mainColor;
+}
