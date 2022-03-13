@@ -1,0 +1,28 @@
+/* header y nav*/
+
+.centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.centrado p{
+    text-align: center;
+}
+.centrado h1{
+  
+    text-align: center;
+}
+
+
+div button a{
+    list-style-type: none;
+    color: white;
+
+}
+
+div button a:hover{
+    color: $mainColor;
+}
