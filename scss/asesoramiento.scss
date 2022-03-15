@@ -9,9 +9,6 @@
     height: 300px;
     margin-top: 20px;
     
-
-
-
 }
 .titulo_asesoramiento h2{
     color: rgba(255, 208, 0, 0.274);
@@ -22,8 +19,21 @@
     text-align: center;
     color: rgba(255, 208, 0, 0.842);
 }
+
+
 .proyectos{
     height: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
+
+       & h3{
+
+        font-size: 10px;
+       }
+
+    & img{
+        width: 80%;
+        height: 80%;
+    }
 }
+
