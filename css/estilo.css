@@ -134,17 +134,15 @@ nav {
   height: 1900px; }
 
 .titulo_asesoramiento {
-  height: 300px;
+  height: 200px;
   margin-top: 20px; }
 
-.titulo_asesoramiento h2 {
-  color: rgba(255, 208, 0, 0.274);
-  text-align: center; }
-
-.titulo_asesoramiento p {
-  text-align: center;
-  color: rgba(255, 208, 0, 0.842); }
-
+/*.titulo_asesoramiento h2 {
+    color: rgba(255, 208, 0, 0.274);
+    text-align: center; } */
+/*.titulo_asesoramiento p {
+    text-align: center;
+    color: rgba(255, 208, 0, 0.842); }*/
 .proyectos {
   height: 400px;
   margin-top: 10px;
@@ -181,18 +179,16 @@ nav {
   width: 70%; }
 
 .titulo_ofertas {
-  height: 400px;
+  height: 200px;
   margin-top: 30px; }
 
-.titulo_ofertas h3 {
-  text-align: center;
-  color: orange;
-  margin-top: 5%; }
-
-.titulo_ofertas p {
-  text-align: center;
-  color: green; }
-
+/*.titulo_ofertas h3 {
+    text-align: center;
+    color: $mainColor;
+    margin-top: 5%; }*/
+/*.titulo_ofertas p {
+    text-align: center;
+    color: green; }*/
 * {
   margin: 0;
   padding: 0; }
@@ -205,6 +201,10 @@ nav {
 /*Formulario de para login*/
 .containerformulario {
   margin-top: 50px; }
+
+.imagen_somos {
+  width: 85%;
+  height: 85%; }
 
 /* generales del body*/
 body {
@@ -238,3 +238,51 @@ h3 {
 
 footer {
   color: orange; }
+
+/*Aplicamos extend en quienes somos, ofertas y asesoramiento*/
+.msj_parrafo, .msjeparrafo1, .msjeparrafo2, .msjeparrafo3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Indie Flower', cursive; }
+
+.msjeparrafo1 {
+  color: white;
+  background-color: orange; }
+
+.msjeparrafo2 {
+  color: black;
+  background-image: linear-gradient(to right, orange, yellow); }
+
+.msjeparrafo3 {
+  color: white;
+  background-color: green; }
+
+/*aplicamos MIXIN en Asesoramiento, Ofertas*/
+.Titulo1 {
+  font-size: 70px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  background-color: orange; }
+
+.Titulo2 {
+  font-size: 65px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: orange;
+  background-color: brown; }
+
+.Titulo3 {
+  font-size: 65px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: orange;
+  background-color: #c01111; }

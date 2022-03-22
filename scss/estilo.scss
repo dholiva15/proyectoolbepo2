@@ -58,6 +58,66 @@ footer {
   color: $mainColor; }
 
 
+  /*Aplicamos extend en quienes somos, ofertas y asesoramiento*/ 
+  
+.msj_parrafo{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Indie Flower', cursive;
+
+
+}
+.msjeparrafo1{
+  @extend .msj_parrafo;
+  color: white;
+  background-color: orange;
+  
+}
+
+.msjeparrafo2{
+  @extend .msj_parrafo;
+  color: black;
+  background-image: linear-gradient(to right, $mainColor, yellow);
+ 
+}
+.msjeparrafo3{
+
+  
+  @extend .msj_parrafo;
+  color: white;
+  background-color: green;
+}
+
+/*aplicamos MIXIN en Asesoramiento, Ofertas*/ 
+
+@mixin estiloTitulos ($colorLetra, $colorFondo, $tamanioLetra) {
+
+  font-size: $tamanioLetra;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: $colorLetra;
+  background-color: $colorFondo;
+}
+
+.Titulo1{
+
+  @include estiloTitulos(white,orange, 70px);
+}
+
+.Titulo2{
+  @include estiloTitulos(orange, brown , 65px )
+}
+
+
+.Titulo3{ 
+  @include estiloTitulos(orange,rgb(192, 17, 17) , 65px )
+}
+
+
 
 
 
