@@ -17,6 +17,7 @@
   
   
   /* container carroousel*/
+
   .container2 {
     height: 500px;
     margin-top: 10%; }
@@ -32,28 +33,31 @@
   
   /* 4 imagenes del body*/
   .container3 {
-    height: 2000px;
-    margin-top: 50px; }
+    height: 1400px;
+    margin-top: 150px; }
   
   .row1 {
-    height: 800px;
+    height: 600px;
     margin-top: 10px;
     margin-bottom: 5px; }
   
   .row2 {
-    height: 800px;
-    margin-top: 10px;
+    height: 600px;
+    margin-top: 300px;
     margin-bottom: 15px; }
   
   .imagen_body a img {
-    width: 90%;
+    width: 75%;
     height: 75%;
     margin-left: 5%;
     margin-right: 5%; }
   
   .imagen_body h3 {
     text-align: center;
-    text-overflow: clip; }
+     }
+  .imagen_elespecial{
+    margin-top: 71px;
+  }
+
   
-  .col-sm-12 {
-    margin-top: 7%; }
+  

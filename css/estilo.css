@@ -27,6 +27,11 @@ nav {
   background-color: orange;
   text-align: center; }
 
+.sticky-top {
+  position: sticky;
+  top: 0px;
+  width: 100%; }
+
 /* Iconos de la WEB*/
 .iconos {
   display: flex;
@@ -103,39 +108,39 @@ nav {
 
 /* 4 imagenes del body*/
 .container3 {
-  height: 2000px;
-  margin-top: 50px; }
+  height: 1400px;
+  margin-top: 150px; }
 
 .row1 {
-  height: 800px;
+  height: 600px;
   margin-top: 10px;
   margin-bottom: 5px; }
 
 .row2 {
-  height: 800px;
-  margin-top: 10px;
+  height: 600px;
+  margin-top: 300px;
   margin-bottom: 15px; }
 
 .imagen_body a img {
-  width: 90%;
+  width: 75%;
   height: 75%;
   margin-left: 5%;
   margin-right: 5%; }
 
 .imagen_body h3 {
-  text-align: center;
-  text-overflow: clip; }
+  text-align: center; }
 
-.col-sm-12 {
-  margin-top: 7%; }
+.imagen_elespecial {
+  margin-top: 71px; }
 
 /* Asesoramiento*/
 .container_asesoramiento {
-  height: 1900px; }
+  height: 1400px; }
 
 .titulo_asesoramiento {
-  height: 200px;
-  margin-top: 20px; }
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 /*.titulo_asesoramiento h2 {
     color: rgba(255, 208, 0, 0.274);
@@ -144,27 +149,34 @@ nav {
     text-align: center;
     color: rgba(255, 208, 0, 0.842); }*/
 .proyectos {
-  height: 400px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  align-items: center; }
   .proyectos img {
-    width: 100%;
-    height: 90%; }
+    align-items: center;
+    width: 70%;
+    height: 70%; }
   .proyectos h3 {
     font-size: 10px;
     text-align: center; }
 
 /*contacto*/
 .container_contacto {
-  margin-top: 30px; }
+  height: 500px;
+  margin-top: 10%; }
 
 .container_row {
   margin-top: 1%;
   margin-bottom: 1%; }
 
+.tituloContacto {
+  color: #ff6600;
+  margin-bottom: 10%; }
+
 /*Ofertas*/
 .container_ofertas {
-  height: 1900px; }
+  height: 1100px; }
 
 .ofertas {
   height: 500px;
@@ -176,22 +188,27 @@ nav {
 
 .ofertas img {
   height: 70%;
-  width: 70%; }
+  width: 50%; }
 
 .titulo_ofertas {
   height: 200px;
   margin-top: 30px; }
-
-/*.titulo_ofertas h3 {
+  .titulo_ofertas h3 {
     text-align: center;
-    color: $mainColor;
-    margin-top: 5%; }*/
+    color: #ff6600;
+    margin-top: 1.5%;
+    font-weight: bolder; }
+
 /*.titulo_ofertas p {
     text-align: center;
     color: green; }*/
 * {
   margin: 0;
   padding: 0; }
+
+.bannerdelmes {
+  color: green;
+  --animate-duration: 5s; }
 
 /*Productos y Pinturas*/
 .container_prod_pint {
@@ -203,18 +220,20 @@ nav {
   margin-top: 50px; }
 
 .imagen_somos {
-  width: 85%;
+  width: 65%;
   height: 85%; }
+
+.titulo_somos {
+  color: #ff6600;
+  margin-top: 7%; }
+
+.container_somos {
+  height: 900px; }
 
 /* generales del body*/
 body {
   background-color: white;
   font-family: 'Roboto', sans-serif; }
-
-h2 {
-  font-size: 45px;
-  color: rgba(255, 166, 0, 0.911);
-  text-align: center; }
 
 h1 {
   font-size: 75px;
@@ -228,61 +247,58 @@ p {
   color: orange; }
 
 h3 {
-  font-size: 25px;
-  color: #faae09; }
+  font-size: 30px;
+  color: #c01111; }
 
 /* foooter*/
 .footer-style {
-  height: 400px;
+  height: 300px;
   margin-top: 50%; }
 
 footer {
   color: orange; }
 
 /*Aplicamos extend en quienes somos, ofertas y asesoramiento*/
-.msj_parrafo, .msjeparrafo1, .msjeparrafo2, .msjeparrafo3 {
-  font-size: 30px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: 'Indie Flower', cursive; }
+.Titulos_, .tituloContacto, .bannerdelmes, .titulo_somos, .Titulos_index, .Titulo_especial, .Titulo_pinturas, .Titulo_productos {
+  font-size: 50px;
+  text-align: center; }
 
-.msjeparrafo1 {
-  color: white;
-  background-color: orange; }
+.Titulos_index {
+  color: rgba(255, 94, 0, 0.945);
+  font-weight: bolder; }
 
-.msjeparrafo2 {
-  color: black;
+.Titulo_especial {
+  color: red;
   background-image: linear-gradient(to right, orange, yellow); }
 
-.msjeparrafo3 {
-  color: white;
-  background-color: green; }
+.Titulo_pinturas {
+  color: #ff6600;
+  margin-bottom: 75px;
+  margin-top: 25px; }
+
+.Titulo_productos {
+  color: #ff6600;
+  margin-bottom: 75px;
+  margin-top: 25px; }
 
 /*aplicamos MIXIN en Asesoramiento, Ofertas*/
-.Titulo1 {
-  font-size: 70px;
+.card1 {
+  font-size: 20px;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  background-color: orange; }
+  background-color: red; }
 
-.Titulo2 {
-  font-size: 65px;
+.card2 {
+  font-size: 15px;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: orange;
-  background-color: brown; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 255, 0.63);
+  background-color: rgba(187, 255, 0, 0.308); }
 
-.Titulo3 {
-  font-size: 65px;
+.card3 {
+  font-size: 17px;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: orange;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffee00;
   background-color: #c01111; }

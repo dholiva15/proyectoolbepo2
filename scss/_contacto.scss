@@ -1,7 +1,16 @@
 /*contacto*/
 .container_contacto {
-    margin-top: 30px; }
+  height: 500px;
+    margin-top: 10%; }
   
   .container_row {
     margin-top: 1%;
     margin-bottom: 1%; }
+
+.tituloContacto{
+
+  @extend .Titulos_;
+  color: $colorTitulo;
+  margin-bottom: 10%;
+
+}

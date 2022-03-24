@@ -29,10 +29,7 @@ body {
   background-color: white;
   font-family: 'Roboto', sans-serif; }
 
-h2 {
-  font-size: 45px;
-  color: rgba(255, 166, 0, 0.911);
-  text-align: center; }
+
 
 h1 {
   font-size: 75px;
@@ -46,13 +43,15 @@ p {
   color: $mainColor; }
 
 h3 {
-  font-size: 25px;
-  color: #faae09; }
+  font-size: 30px;
+  color: rgb(192, 17, 17); }
 
 /* foooter*/
 .footer-style {
-  height: 400px;
+  height: 300px;
   margin-top: 50%; }
+
+
 
 footer {
   color: $mainColor; }
@@ -60,62 +59,72 @@ footer {
 
   /*Aplicamos extend en quienes somos, ofertas y asesoramiento*/ 
   
-.msj_parrafo{
-  font-size: 30px;
+.Titulos_{
+  font-size: 50px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: 'Indie Flower', cursive;
+  
 
 
 }
-.msjeparrafo1{
-  @extend .msj_parrafo;
-  color: white;
-  background-color: orange;
+.Titulos_index{
+  @extend .Titulos_;
+  color: rgba(255, 94, 0, 0.945);
+  font-weight: bolder;
+  
+ 
   
 }
 
-.msjeparrafo2{
-  @extend .msj_parrafo;
-  color: black;
+.Titulo_especial{
+  @extend .Titulos_;
+  color: red;
   background-image: linear-gradient(to right, $mainColor, yellow);
  
 }
-.msjeparrafo3{
-
+.Titulo_pinturas{
+  @extend .Titulos_;
+  color: $colorTitulo;
+  margin-bottom: 75px;
+  margin-top: 25px;
   
-  @extend .msj_parrafo;
-  color: white;
-  background-color: green;
+}
+
+.Titulo_productos{
+  @extend .Titulos_;
+  color: $colorTitulo;
+  margin-bottom: 75px;
+  margin-top: 25px;
+
+
 }
 
 /*aplicamos MIXIN en Asesoramiento, Ofertas*/ 
 
-@mixin estiloTitulos ($colorLetra, $colorFondo, $tamanioLetra) {
+@mixin estilo_card ($colorLetra, $colorFondo, $tamanioLetra) {
 
   font-size: $tamanioLetra;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: $colorLetra;
   background-color: $colorFondo;
 }
 
-.Titulo1{
+.card1{
 
-  @include estiloTitulos(white,orange, 70px);
+  @include estilo_card( white,red, 20px);
 }
 
-.Titulo2{
-  @include estiloTitulos(orange, brown , 65px )
+.card2{
+  @include estilo_card(rgba(0, 0, 255, 0.63),rgba(187, 255, 0, 0.308) , 15px )
 }
 
 
-.Titulo3{ 
-  @include estiloTitulos(orange,rgb(192, 17, 17) , 65px )
+.card3{ 
+  @include estilo_card(rgb(255, 238, 0),rgb(192, 17, 17) , 17px )
 }
+
+
 
 
 
